@@ -1,0 +1,79 @@
+// Fonts
+@font-face {
+    font-family: 'Recoleta';
+    src: url('../fonts/Recoleta.ttf');
+}
+
+@font-face {
+    font-family: 'Fellix Bold';
+    src: url('../fonts/Fellix-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'Fellix SemiBold';
+    src: url('../fonts/Fellix-SemiBold.ttf');
+}
+
+@font-face {
+    font-family: 'Fellix Medium';
+    src: url('../fonts/Fellix-Medium.ttf');
+}
+
+@font-face {
+    font-family: 'Fellix Regular';
+    src: url('../fonts/Fellix-Regular.ttf');
+}
+
+
+// Container
+$container--1920: 1640px;
+$container--half: 812px;
+
+
+// Colors 
+$grey: #F0F0F0;
+$dark: #241E4B;
+$purple: #AEA1FF;
+$orange: #FFC9A1;
+
+
+// Typography
+$recoleta: 'Recoleta';
+$fellixBold: 'Fellix Bold';
+$fellixSemiBold: 'Fellix SemiBold';
+$fellixMedium: 'Fellix Medium';
+$fellixRegular: 'Fellix Regular';
+
+
+a{
+    text-decoration: none;
+}
+
+h1{
+    font-size: 42px;
+    font-family: $recoleta;
+}
+
+p {
+    font-size: 20px;
+    font-family: $fellixRegular;
+    line-height: calc(20px * 1.4);
+}
+
+label{
+    font-family: $fellixMedium;
+    font-size: 24px;
+    text-align: left;
+}
+
+input{
+    width: 100%;
+    padding:24px 24px;
+    border:none;
+    background-color: $grey;
+    box-sizing: border-box;
+    border-radius: 5px;
+    margin-top: 16px;
+    margin-bottom:24px;
+}
+

@@ -1,0 +1,120 @@
+@import 'variables.scss';
+
+
+.container{
+    height: 100vh;
+    display: flex;
+    gap:16px;
+    .container__left{
+        width: calc(100% / 2);
+        padding-top:120px;
+        padding-left: 140px;
+        box-sizing: border-box;
+        h1{
+            color: $dark;
+            margin-bottom: 16px;
+        }
+        p{
+            margin-bottom: 40px;
+            width: 95%;
+        }
+        form{
+            width: 80%;
+            margin-bottom: 80px;
+            .password{
+                a{
+                    color:$dark;
+                    p {
+                        text-align: left;
+                        text-decoration: underline;
+                    }
+                }
+            }
+            .connexion-cta{
+                background-color: $orange;
+                font-family: $fellixRegular;
+                font-size: 24px;
+                transition:.2s;
+                cursor: pointer;
+                &:hover{
+                    background-color: #FCB988;
+                }
+            }
+        }
+        a{
+            background-color: white;
+            border: none;
+            color:$dark;
+            font-size: 24px;
+            font-family: $fellixMedium;
+        }
+    }
+    .container__right{
+        background-image: url('../img/background_home.png');
+        background-size: cover;
+        background-position: center;
+        width: calc(100% / 2);
+        box-sizing: border-box;
+    }
+}
+
+/* VERSION DESKTOP 1024PX */ 
+
+@media only screen and (max-width:1024px) {
+    .container{
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+        height: auto;
+        .container__right{
+            height: 400px;
+            width: 100%;
+        }
+        .container__left{
+            padding:24px;
+            width: 100%;
+            form{
+                width: 100%;
+                margin-bottom: 40px;
+            }
+        }
+        
+    }
+}
+
+/* VERSION TABLETTE */
+
+@media only screen and (max-width:768px) {
+    .container{
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+        height: auto;
+        .container__right{
+            height: 400px;
+            width: 100%;
+        }
+        .container__left{
+            padding:24px;
+            width: 100%;
+            form{
+                width: 100%;
+                margin-bottom: 40px;
+            }
+        }
+        
+    }
+}
+
+/* VERSION MOBILE */
+
+@media only screen and (max-width:375px) {
+    h1{
+        font-size:32px;
+    }
+    p{
+        font-size: 18px;
+    }
+    a{
+        display: block;
+        text-align: center;
+    }
+}
