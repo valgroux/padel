@@ -1,0 +1,57 @@
+@import 'variables.scss';
+
+.container{
+    width: $container--1920;
+    margin: 0 auto;
+    .top{
+        width: $container--1920;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 80px;
+        margin-bottom: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .top__left span{
+            color:$orange;
+        }
+        .top__right button {
+            background-color: $purple;
+            padding: 24px;
+            font-family: $fellixRegular;
+            font-size: 16px;
+            color:#fff;
+            border:none;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: .2s;
+            &:hover{
+                background-color: #9B8CFD;
+            }
+        }
+    }
+
+    table{
+        width: 100%;
+        border-spacing: 0 24px;
+        border-collapse: separate;
+        border-spacing: 0 24px; /* Remplacez 10px par l'espace vertical souhaité entre les lignes */
+        thead{
+            background-color: $grey;
+            text-align: left;
+            th{
+                padding: 24px;
+                font-family: $fellixMedium;
+                font-size: 18px;
+            }
+        }
+        tbody{
+            td{
+                text-align: left;
+                font-family: $fellixMedium;
+                font-size: 18px;
+                padding:24px;
+            }
+        }
+    }
+}

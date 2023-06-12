@@ -22,8 +22,8 @@
                     <input type="email" name="email" id="email" required>
                 </div>
                 <div class="password">
-                    <label for="password">Votre mot de passe :</label><br>
-                    <input type="password" name="password" id="password" required>
+                    <label for="mdp">Votre mot de passe :</label><br>
+                    <input type="password" name="mdp" id="password" required>
                     <a href="#"><p>Mot de passe oublié ?</p></a>
                 </div>
                 <input class="connexion-cta" type="submit" name="login_submit" value="Se connecter">
@@ -32,5 +32,6 @@
         </div>
         <div class="container__right"></div>
     </div>
+    <?php include 'members/connexion_process.php'; ?>
 </body>
 </html>

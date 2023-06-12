@@ -1,0 +1,105 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "Recoleta";
+  src: url("../fonts/Recoleta.ttf");
+}
+@font-face {
+  font-family: "Fellix Bold";
+  src: url("../fonts/Fellix-Bold.ttf");
+}
+@font-face {
+  font-family: "Fellix SemiBold";
+  src: url("../fonts/Fellix-SemiBold.ttf");
+}
+@font-face {
+  font-family: "Fellix Medium";
+  src: url("../fonts/Fellix-Medium.ttf");
+}
+@font-face {
+  font-family: "Fellix Regular";
+  src: url("../fonts/Fellix-Regular.ttf");
+}
+a {
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 42px;
+  font-family: "Recoleta";
+}
+
+p {
+  font-size: 20px;
+  font-family: "Fellix Regular";
+  line-height: 28px;
+}
+
+label {
+  font-family: "Fellix Medium";
+  font-size: 24px;
+  text-align: left;
+}
+
+input {
+  width: 100%;
+  padding: 24px 24px;
+  border: none;
+  background-color: #F0F0F0;
+  box-sizing: border-box;
+  border-radius: 5px;
+  margin-top: 16px;
+  margin-bottom: 24px;
+}
+
+.container {
+  width: 1640px;
+  margin: 0 auto;
+}
+.container .top {
+  width: 1640px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 80px;
+  margin-bottom: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.container .top .top__left span {
+  color: #FFC9A1;
+}
+.container .top .top__right button {
+  background-color: #AEA1FF;
+  padding: 24px;
+  font-family: "Fellix Regular";
+  font-size: 16px;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.container .top .top__right button:hover {
+  background-color: #9B8CFD;
+}
+.container table {
+  width: 100%;
+  border-spacing: 0 24px;
+  border-collapse: separate;
+  border-spacing: 0 24px; /* Remplacez 10px par l'espace vertical souhaité entre les lignes */
+}
+.container table thead {
+  background-color: #F0F0F0;
+  text-align: left;
+}
+.container table thead th {
+  padding: 24px;
+  font-family: "Fellix Medium";
+  font-size: 18px;
+}
+.container table tbody td {
+  text-align: left;
+  font-family: "Fellix Medium";
+  font-size: 18px;
+  padding: 24px;
+}/*# sourceMappingURL=tableau-de-bord.css.map */
